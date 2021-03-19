@@ -1,21 +1,21 @@
-{% set version = "1.0" %}
-
 package:
   name: rnmc-native
-  version: {{ version }}
+  version: "1.0"
 
 source:
-  url: https://github.com/danielbarter/RNMC_native/archive/v{{ version }}.zip
-  sha256: 942e45b57d2e198864bd1201dc1fb879dc137e634f0ee71a7a4883db39b69e4c
-
+  url: https://github.com/danielbarter/RNMC_native/archive/2d29393f13944e829e55cc7968eb5e600d6356fd.zip
+  sha256: dfdc3cdea7d9de1dae0469113daa86f271624e1cadc18cd04014ed8ee3035cea
 build:
   number: 0
   skip: true  # [win]
-  script: "./build.sh RNMC && cp ./bin/RNMC $PREFIX"
+  script: "meson setup --prefix $PREFIX builddir && cd builddir && ninja && meson install"
 
 requirements:
   build:
     - {{ compiler("c") }}
+    - meson
+    - ninja
+    - gsl
 
   host:
     - gsl
@@ -25,7 +25,7 @@ requirements:
 
 test:
   commands:
-    - "./build.sh test && ./bin/test ./test_materials"
+    - "cd builddir && meson test"
 
 about:
   home: https://github.com/danielbarter/RNMC_native
