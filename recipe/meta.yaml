@@ -1,6 +1,6 @@
 package:
   name: rnmc-native
-  version: "1.0"
+  version: "1.1"
 
 source:
   url: https://github.com/danielbarter/RNMC_native/archive/2d29393f13944e829e55cc7968eb5e600d6356fd.zip
