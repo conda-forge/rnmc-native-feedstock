@@ -3,8 +3,8 @@ package:
   version: "1.2"
 
 source:
-  url: https://github.com/danielbarter/RNMC_native/archive/fa947d624515b534a812b560906841bb49f8a2ca.zip
-  sha256: a5eb1b16fda2ff7ae07c7308fd596a2d8bb47c206dcad12acaad588f9f164685
+  url: https://github.com/danielbarter/RNMC_native/archive/f20c15d62e4ecc54c48efc98e8f3c7210671eb99.zip
+  sha256: 4e5ccdaf83a09942fa9e222b863f5905591c1c53be59232ec8e4977152060c0a
 build:
   number: 0
   skip: true  # [win]
