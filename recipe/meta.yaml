@@ -1,10 +1,10 @@
 package:
   name: rnmc-native
-  version: "1.4"
+  version: "1.5"
 
 source:
-  url: https://github.com/danielbarter/RNMC_native/archive/f5ac3d79296fc3874fc6e2b6a3a85dce6cbc7434.zip
-  sha256: 748f631e4b79f398c7aadb66c123bb870b94afe0c1d514754e9686a2b7ffab5c
+  url: https://github.com/danielbarter/RNMC_native/archive/e05e265dc79e34baa28c472ec35825e2dfa388d0.zip
+  sha256: 2611c9f46fdc9bd7251e6c2c1f217c7fc867faa6bbdad1556bb0308091a6ec42
 build:
   number: 0
   skip: true  # [win]
@@ -16,9 +16,11 @@ requirements:
     - meson
     - ninja
     - gsl
+    - sqlite
 
   host:
     - gsl
+    - sqlite
 
   run:
     - gsl
