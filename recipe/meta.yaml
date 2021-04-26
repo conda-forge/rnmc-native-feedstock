@@ -1,10 +1,10 @@
 package:
   name: rnmc-native
-  version: "1.6"
+  version: "1.7"
 
 source:
-  url: https://github.com/danielbarter/RNMC_native/archive/f27d29f92d36aed476bb9e2507d3215e5e69b85d.zip
-  sha256: e5b0db045a06d7d65f27075bc1971f55ab2545e13976327c7b0d3f80b16b46d3
+  url: https://github.com/danielbarter/RNMC_native/archive/cb00eacac9874fd4314a623a8a9c1ac22d48efa5.zip
+  sha256: 0f90896d81ba1732e17e32ffe80ff3540a944e1a572f739b9f17ba5e94a2e907
 build:
   number: 0
   skip: true  # [win]
