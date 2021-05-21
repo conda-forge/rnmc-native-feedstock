@@ -1,14 +1,14 @@
 package:
   name: rnmc-native
-  version: "1.8"
+  version: "1.9"
 
 source:
-  url: https://github.com/danielbarter/RNMC_native/archive/6c37656519f10038a546ca854825ff118c5914f9.zip
-  sha256: 908a7e80962f12d63fbfbdc842bd95c2717ccabb4109af7f20ed62d513cad904
+  url: https://github.com/danielbarter/RNMC_native/archive/d643ec6651f325dda13fe45207ed4286f91134a0.zip
+  sha256: 5b105ddcd53c335e70f3ac46724da57559b35f68bd313d74fa1031a5694e4e82
 build:
   number: 0
   skip: true  # [win]
-  script: "meson setup --prefix $PREFIX builddir && cd builddir && ninja && meson install"
+  script: "meson setup --prefix $PREFIX --buildtype=release builddir && cd builddir && ninja && meson install"
 
 requirements:
   build:
