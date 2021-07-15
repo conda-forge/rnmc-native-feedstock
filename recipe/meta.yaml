@@ -25,6 +25,10 @@ requirements:
   run:
     - gsl
 
+test:
+  commands:
+    - "ls"
+
 about:
   home: https://github.com/danielbarter/RNMC_native
   license: BSD-3-Clause-LBNL
